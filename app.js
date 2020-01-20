@@ -3,15 +3,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var knex = require('knex')({
-  client: 'postgres',
-  connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
-    password : 'HPdude22$$',
-    database : 'myapp_test'
-  }
-});
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
